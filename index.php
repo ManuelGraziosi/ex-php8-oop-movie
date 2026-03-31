@@ -1,3 +1,17 @@
+<?php
+// definizione di una classe Movie
+class Movie
+{
+
+}
+
+$film = new Movie();
+
+var_dump($film);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +23,7 @@
 </head>
 
 <body>
+    <h1>EX - PHP Classe Movie</h1>
 
 </body>
 
