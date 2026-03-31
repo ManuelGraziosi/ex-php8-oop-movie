@@ -53,14 +53,14 @@ class Movie
     protected $description;
     protected $year;
 
-    protected $genre;
+    protected array $genre = [];
 
     public function __construct($_title, $_description, $_year, Genre $_genre)
     {
         $this->title = $_title;
         $this->description = $_description;
         $this->year = $_year;
-        $this->genre = $_genre;
+        $this->genre[] = $_genre;
 
     }
 
@@ -92,6 +92,11 @@ class Movie
         return $this->year;
     }
 
+    public function addGenre($_genre)
+    {
+        $this->genre[] = $_genre;
+    }
+
 }
 
 $film1_title = "Titanic";
@@ -99,6 +104,8 @@ $film1_description = "Il transatlantico Titanic, considerato un gioiello tecnolo
 $film1_year = 1997;
 
 $film1 = new Movie($film1_title, $film1_description, $film1_year, new Genre("Melodramma", ""));
+var_dump($film1);
+$film1->addGenre(new Genre("Rimantico", ""));
 var_dump($film1);
 
 $film2_title = "Dune";
