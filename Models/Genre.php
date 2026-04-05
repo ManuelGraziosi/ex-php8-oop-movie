@@ -7,10 +7,10 @@ class Genre
     protected $description;
     //protected $ageRating;
 
-    public function __construct($_name, $_description) //, $_ageRating)
+    public function __construct($_name) //, $_description, $_ageRating)
     {
         $this->name = $_name;
-        $this->description = $_description;
+        //$this->description = $_description;
         //$this->ageRating = $_ageRating;
     }
 
@@ -19,10 +19,10 @@ class Genre
         $this->name = $_name;
     }
 
-    public function setDescription($_description)
-    {
-        $this->description = $_description;
-    }
+    // public function setDescription($_description)
+    // {
+    //     $this->description = $_description;
+    // }
 
     // public function setAgeRating($_ageRating)
     // {
@@ -34,10 +34,10 @@ class Genre
         return $this->name;
     }
 
-    public function getDescription()
-    {
-        return $this->description;
-    }
+    // public function getDescription()
+    // {
+    //     return $this->description;
+    // }
 
     // public function getAgeRating()
     // {

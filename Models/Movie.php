@@ -54,4 +54,9 @@ class Movie
         $this->genre[] = $_genre;
     }
 
+    public function getGenres()
+    {
+        return $this->genre;
+    }
+
 }
